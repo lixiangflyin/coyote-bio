@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C7A5AA18D47E4300B29EC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7A5A918D47E4300B29EC3 /* Foundation.framework */; };
+		18C7A5AC18D47E4300B29EC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7A5AB18D47E4300B29EC3 /* CoreGraphics.framework */; };
+		18C7A5AE18D47E4300B29EC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7A5AD18D47E4300B29EC3 /* UIKit.framework */; };
+		18C7A5B418D47E4300B29EC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18C7A5B218D47E4300B29EC3 /* InfoPlist.strings */; };
+		18C7A5B618D47E4300B29EC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7A5B518D47E4300B29EC3 /* main.m */; };
+		18C7A5BA18D47E4300B29EC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7A5B918D47E4300B29EC3 /* AppDelegate.m */; };
+		18C7A5BD18D47E4300B29EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C7A5BB18D47E4300B29EC3 /* Main.storyboard */; };
+		18C7A5C018D47E4300B29EC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7A5BF18D47E4300B29EC3 /* ViewController.m */; };
+		18C7A5C218D47E4300B29EC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C7A5C118D47E4300B29EC3 /* Images.xcassets */; };
+		18C7A5C918D47E4300B29EC3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7A5C818D47E4300B29EC3 /* XCTest.framework */; };
+		18C7A5CA18D47E4300B29EC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7A5A918D47E4300B29EC3 /* Foundation.framework */; };
+		18C7A5CB18D47E4300B29EC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C7A5AD18D47E4300B29EC3 /* UIKit.framework */; };
+		18C7A5D318D47E4300B29EC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18C7A5D118D47E4300B29EC3 /* InfoPlist.strings */; };
+		18C7A5D518D47E4300B29EC3 /* coyote_bioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7A5D418D47E4300B29EC3 /* coyote_bioTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18C7A5CC18D47E4300B29EC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C7A59E18D47E4300B29EC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C7A5A518D47E4300B29EC3;
+			remoteInfo = "coyote-bio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C7A5A618D47E4300B29EC3 /* coyote-bio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coyote-bio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C7A5A918D47E4300B29EC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18C7A5AB18D47E4300B29EC3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18C7A5AD18D47E4300B29EC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18C7A5B118D47E4300B29EC3 /* coyote-bio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coyote-bio-Info.plist"; sourceTree = "<group>"; };
+		18C7A5B318D47E4300B29EC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18C7A5B518D47E4300B29EC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18C7A5B718D47E4300B29EC3 /* coyote-bio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "coyote-bio-Prefix.pch"; sourceTree = "<group>"; };
+		18C7A5B818D47E4300B29EC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18C7A5B918D47E4300B29EC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18C7A5BC18D47E4300B29EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18C7A5BE18D47E4300B29EC3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18C7A5BF18D47E4300B29EC3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18C7A5C118D47E4300B29EC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18C7A5C718D47E4300B29EC3 /* coyote-bioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coyote-bioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C7A5C818D47E4300B29EC3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18C7A5D018D47E4300B29EC3 /* coyote-bioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coyote-bioTests-Info.plist"; sourceTree = "<group>"; };
+		18C7A5D218D47E4300B29EC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18C7A5D418D47E4300B29EC3 /* coyote_bioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coyote_bioTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C7A5A318D47E4300B29EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C7A5AC18D47E4300B29EC3 /* CoreGraphics.framework in Frameworks */,
+				18C7A5AE18D47E4300B29EC3 /* UIKit.framework in Frameworks */,
+				18C7A5AA18D47E4300B29EC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C7A5C418D47E4300B29EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C7A5C918D47E4300B29EC3 /* XCTest.framework in Frameworks */,
+				18C7A5CB18D47E4300B29EC3 /* UIKit.framework in Frameworks */,
+				18C7A5CA18D47E4300B29EC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C7A59D18D47E4300B29EC3 = {
+			isa = PBXGroup;
+			children = (
+				18C7A5AF18D47E4300B29EC3 /* coyote-bio */,
+				18C7A5CE18D47E4300B29EC3 /* coyote-bioTests */,
+				18C7A5A818D47E4300B29EC3 /* Frameworks */,
+				18C7A5A718D47E4300B29EC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C7A5A718D47E4300B29EC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C7A5A618D47E4300B29EC3 /* coyote-bio.app */,
+				18C7A5C718D47E4300B29EC3 /* coyote-bioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C7A5A818D47E4300B29EC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C7A5A918D47E4300B29EC3 /* Foundation.framework */,
+				18C7A5AB18D47E4300B29EC3 /* CoreGraphics.framework */,
+				18C7A5AD18D47E4300B29EC3 /* UIKit.framework */,
+				18C7A5C818D47E4300B29EC3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18C7A5AF18D47E4300B29EC3 /* coyote-bio */ = {
+			isa = PBXGroup;
+			children = (
+				18C7A5B818D47E4300B29EC3 /* AppDelegate.h */,
+				18C7A5B918D47E4300B29EC3 /* AppDelegate.m */,
+				18C7A5BB18D47E4300B29EC3 /* Main.storyboard */,
+				18C7A5BE18D47E4300B29EC3 /* ViewController.h */,
+				18C7A5BF18D47E4300B29EC3 /* ViewController.m */,
+				18C7A5C118D47E4300B29EC3 /* Images.xcassets */,
+				18C7A5B018D47E4300B29EC3 /* Supporting Files */,
+			);
+			path = "coyote-bio";
+			sourceTree = "<group>";
+		};
+		18C7A5B018D47E4300B29EC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18C7A5B118D47E4300B29EC3 /* coyote-bio-Info.plist */,
+				18C7A5B218D47E4300B29EC3 /* InfoPlist.strings */,
+				18C7A5B518D47E4300B29EC3 /* main.m */,
+				18C7A5B718D47E4300B29EC3 /* coyote-bio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18C7A5CE18D47E4300B29EC3 /* coyote-bioTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C7A5D418D47E4300B29EC3 /* coyote_bioTests.m */,
+				18C7A5CF18D47E4300B29EC3 /* Supporting Files */,
+			);
+			path = "coyote-bioTests";
+			sourceTree = "<group>";
+		};
+		18C7A5CF18D47E4300B29EC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18C7A5D018D47E4300B29EC3 /* coyote-bioTests-Info.plist */,
+				18C7A5D118D47E4300B29EC3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C7A5A518D47E4300B29EC3 /* coyote-bio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C7A5D818D47E4300B29EC3 /* Build configuration list for PBXNativeTarget "coyote-bio" */;
+			buildPhases = (
+				18C7A5A218D47E4300B29EC3 /* Sources */,
+				18C7A5A318D47E4300B29EC3 /* Frameworks */,
+				18C7A5A418D47E4300B29EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "coyote-bio";
+			productName = "coyote-bio";
+			productReference = 18C7A5A618D47E4300B29EC3 /* coyote-bio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18C7A5C618D47E4300B29EC3 /* coyote-bioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C7A5DB18D47E4300B29EC3 /* Build configuration list for PBXNativeTarget "coyote-bioTests" */;
+			buildPhases = (
+				18C7A5C318D47E4300B29EC3 /* Sources */,
+				18C7A5C418D47E4300B29EC3 /* Frameworks */,
+				18C7A5C518D47E4300B29EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C7A5CD18D47E4300B29EC3 /* PBXTargetDependency */,
+			);
+			name = "coyote-bioTests";
+			productName = "coyote-bioTests";
+			productReference = 18C7A5C718D47E4300B29EC3 /* coyote-bioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C7A59E18D47E4300B29EC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					18C7A5C618D47E4300B29EC3 = {
+						TestTargetID = 18C7A5A518D47E4300B29EC3;
+					};
+				};
+			};
+			buildConfigurationList = 18C7A5A118D47E4300B29EC3 /* Build configuration list for PBXProject "coyote-bio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18C7A59D18D47E4300B29EC3;
+			productRefGroup = 18C7A5A718D47E4300B29EC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C7A5A518D47E4300B29EC3 /* coyote-bio */,
+				18C7A5C618D47E4300B29EC3 /* coyote-bioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18C7A5A418D47E4300B29EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C7A5C218D47E4300B29EC3 /* Images.xcassets in Resources */,
+				18C7A5B418D47E4300B29EC3 /* InfoPlist.strings in Resources */,
+				18C7A5BD18D47E4300B29EC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C7A5C518D47E4300B29EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C7A5D318D47E4300B29EC3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C7A5A218D47E4300B29EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C7A5C018D47E4300B29EC3 /* ViewController.m in Sources */,
+				18C7A5BA18D47E4300B29EC3 /* AppDelegate.m in Sources */,
+				18C7A5B618D47E4300B29EC3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C7A5C318D47E4300B29EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C7A5D518D47E4300B29EC3 /* coyote_bioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C7A5CD18D47E4300B29EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C7A5A518D47E4300B29EC3 /* coyote-bio */;
+			targetProxy = 18C7A5CC18D47E4300B29EC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18C7A5B218D47E4300B29EC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C7A5B318D47E4300B29EC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18C7A5BB18D47E4300B29EC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C7A5BC18D47E4300B29EC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18C7A5D118D47E4300B29EC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C7A5D218D47E4300B29EC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18C7A5D618D47E4300B29EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		18C7A5D718D47E4300B29EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18C7A5D918D47E4300B29EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coyote-bio/coyote-bio-Prefix.pch";
+				INFOPLIST_FILE = "coyote-bio/coyote-bio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18C7A5DA18D47E4300B29EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coyote-bio/coyote-bio-Prefix.pch";
+				INFOPLIST_FILE = "coyote-bio/coyote-bio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18C7A5DC18D47E4300B29EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/coyote-bio.app/coyote-bio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coyote-bio/coyote-bio-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "coyote-bioTests/coyote-bioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18C7A5DD18D47E4300B29EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/coyote-bio.app/coyote-bio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coyote-bio/coyote-bio-Prefix.pch";
+				INFOPLIST_FILE = "coyote-bioTests/coyote-bioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C7A5A118D47E4300B29EC3 /* Build configuration list for PBXProject "coyote-bio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C7A5D618D47E4300B29EC3 /* Debug */,
+				18C7A5D718D47E4300B29EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C7A5D818D47E4300B29EC3 /* Build configuration list for PBXNativeTarget "coyote-bio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C7A5D918D47E4300B29EC3 /* Debug */,
+				18C7A5DA18D47E4300B29EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18C7A5DB18D47E4300B29EC3 /* Build configuration list for PBXNativeTarget "coyote-bioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C7A5DC18D47E4300B29EC3 /* Debug */,
+				18C7A5DD18D47E4300B29EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18C7A59E18D47E4300B29EC3 /* Project object */;
+}
