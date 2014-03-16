@@ -18,7 +18,7 @@
     [Toolkit saveTotalTime:@"3000"];
     [Toolkit saveRecordTime:@"2"];
     [Toolkit saveNoticeTime:@"3"];
-    [Toolkit saveTestUrl:@"192.168.191.1"];
+    [Toolkit saveTestUrl:@"127.0.0.1"];
     
     return YES;
 }

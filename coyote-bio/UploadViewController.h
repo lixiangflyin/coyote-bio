@@ -10,10 +10,12 @@
 #import "SegueStatusListener.h"
 
 
-@interface UploadViewController : UIViewController<SegueStatusListener>
+@interface UploadViewController : UIViewController<UITextViewDelegate,SegueStatusListener>
 
 @property (nonatomic, retain) NSMutableDictionary *uploadParma;
 
-@property (nonatomic, retain) NSString * sampleValue;
+@property (nonatomic, retain) NSMutableArray *replies;
+
+@property (nonatomic, retain) NSMutableArray *rightAnswers;
 
 @end

@@ -24,7 +24,9 @@
 
 - (void)dealloc
 {
-    [_uploadParma release];
+    [_uploadParma release];  //其实不需要释放，因为未申请内存
+    [_replies release];
+    [_rightAnswers release];
     [super dealloc];
 }
 
@@ -40,7 +42,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.view.backgroundColor = [UIColor whiteColor];
+    
+    _rightAnswers = [[NSMutableArray alloc]init];
+    
+	//获取测试数据
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+	NSString *plistPath = [path stringByAppendingPathComponent:@"answer.plist"];
+    NSArray *list = [NSMutableArray arrayWithContentsOfFile:plistPath];
+    //NSLog(@"%@",list);
+    [_rightAnswers addObjectsFromArray:list];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     CGRect viewFrame = CGRectZero;
     viewFrame.size = CGSizeMake(HEIGHT, WIDTH);
     self.view.frame = viewFrame;
@@ -52,57 +64,93 @@
     [self.view addSubview:imageView];
     [imageView release];
     
-    //[self simpleToServer];
-    
-    NSLog(@"sample: %@",_sampleValue);
-    
-    [self addAnswersView];
+    [self simpleToServer];
+
+    //[self addAnswersView];
     
     
 }
 
+#pragma -mark 显示答案结果
 -(void)addAnswersView
 {
-    for (int i=0; i<12; i++) {
-        //for (int i=0; i<[questionNumber count]; i++) {
-        UIImageView *imageView = [[UIImageView alloc] init];
-        if (i%2 == 0) {
-            NSString *imagePath1 = [[NSBundle mainBundle]pathForResource:@"UI-Button-Result-True" ofType:@"png"];
-            [imageView setImage:[UIImage imageWithContentsOfFile:imagePath1]];
-        }
-        else{
-            NSString *imagePath2 = [[NSBundle mainBundle]pathForResource:@"UI-Button-Result-False" ofType:@"png"];
-            [imageView setImage:[UIImage imageWithContentsOfFile:imagePath2]];
-        }
-        [imageView setFrame:CGRectMake(625, 180+35*i, 200, 30)];
-        [self.view addSubview:imageView];
-        [imageView release];
-        
-        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(655, 180+35*i, 150, 30)];
-        [label setText:[NSString stringWithFormat:@"第%d题",i+1]];
-        label.font = [UIFont systemFontOfSize:18];
-        label.textAlignment = NSTextAlignmentCenter;
-        [self.view addSubview:label];
-        [label release];
-    }
+    //初始化
+    UITextView *textView = [[[UITextView alloc] initWithFrame:CGRectMake(155, 170, 750, 430)] autorelease];
+    //设置代理 需在interface中声明UITextViewDelegate
+    textView.delegate = self;
+    //字体大小
+    textView.font = [UIFont systemFontOfSize:20];
+    textView.editable = NO;
+    textView.text = [self showTestExplaination];
+    //添加滚动区域
+    textView.contentInset = UIEdgeInsetsMake(-11, -6, 0, 0);
+    //是否可以滚动
+    textView.scrollEnabled = YES;
+    //获得焦点
+    [textView becomeFirstResponder];
+    [self.view addSubview:textView];
     
-    UIButton *reagain = [[UIButton alloc]init];
-    reagain.frame = CGRectMake(0, 280, 113, 226);
-    [reagain setBackgroundImage:[UIImage imageNamed:@"BtnRestart_1.jpg"] forState:UIControlStateNormal];
-    [reagain setBackgroundImage:[UIImage imageNamed:@"BtnRestart_2.jpg"] forState:UIControlStateHighlighted];
-    [reagain addTarget:self action:@selector(reAgain) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:reagain];
-    [reagain release];
+    
+    UIButton *reagainBtn = [[UIButton alloc]init];
+    reagainBtn.frame = CGRectMake(0, 280, 113, 226);
+    [reagainBtn setBackgroundImage:[UIImage imageNamed:@"BtnRestart_1.jpg"] forState:UIControlStateNormal];
+    [reagainBtn setBackgroundImage:[UIImage imageNamed:@"BtnRestart_2.jpg"] forState:UIControlStateHighlighted];
+    [reagainBtn addTarget:self action:@selector(reAgain) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:reagainBtn];
+    [reagainBtn release];
 }
 
+-(NSString *)showTestExplaination
+{
+    NSMutableString *str = [[[NSMutableString alloc]init]autorelease];
+    for (int i=0; i<[_replies count]; i++) {
+        NSDictionary *dic = [_rightAnswers objectAtIndex:i];
+        NSArray *arr = [dic objectForKey:@"explaination"];
+        if ([[_replies objectAtIndex:i] isEqualToString:[dic objectForKey:@"reply"]]) {
+            NSString *str1 = [arr objectAtIndex:0];
+            str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,str1];
+        }
+        else
+        {
+            NSString *str2 = [arr objectAtIndex:1];
+            str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,str2];
+        }
+    }
+    
+    return str;
+}
+
+//视图切换
 -(void)reAgain
 {
     [self performSegueWithIdentifier:@"UploadToLogin" sender:self];
 }
 
+#pragma -mark 显示重传视图
+-(void)addReuploadView
+{
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(924, 317, 80, 270)];
+    NSString *imagePath = [[NSBundle mainBundle]pathForResource:@"UploadErrorView_Background" ofType:@"jpg"];
+    [imageView setImage:[UIImage imageWithContentsOfFile:imagePath]];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:imageView];
+    
+    UIButton *reuploadBtn = [[UIButton alloc]init];
+    reuploadBtn.frame = CGRectMake(939, 602, 50, 50);
+    [reuploadBtn setBackgroundImage:[UIImage imageNamed:@"BtnReupload_1.jpg"] forState:UIControlStateNormal];
+    [reuploadBtn setBackgroundImage:[UIImage imageNamed:@"BtnReupload_2.jpg"] forState:UIControlStateHighlighted];
+    [reuploadBtn addTarget:self action:@selector(reUpload) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:reuploadBtn];
+    [reuploadBtn release];
+    
+}
+
+-(void)reUpload
+{
+    [self simpleToServer];
+}
 
 #pragma -mark 下面两个函数仅仅用来测试
-//测试
 -(NSString*) getValidURL
 {
     if (false) {
@@ -110,6 +158,7 @@
     }
     
     return [NSString stringWithFormat:@"http://%@/apps/coyotes/post_answer1.php?",[Toolkit getTestUrl]];
+    //return [NSString stringWithFormat:@"http://%@:8080/coyotes/post_answer1.php?",[Toolkit getTestUrl]];
 }
 
 -(void) simpleToServer
@@ -125,7 +174,7 @@
     //设置表单提交项
     [request setPostValue:@"1" forKey:@"uc"];
     [request setPostValue:@"20140201" forKey:@"qgc"];
-    [request setPostValue:@"A_B_C" forKey:@"ans"];
+    [request setPostValue:[self arrToString:_replies] forKey:@"ans"];
     
     NSLog(@"request = %@",request);
     
@@ -137,13 +186,16 @@
         NSLog(@"dic %@",dic);
         if ([[dic objectForKey:@"result"] isEqualToString:@"success"]) {
             
-            //[ProgressHUD dismiss];
             [ProgressHUD showSuccess:@"上传成功"];
+            
+            [self addAnswersView];
             
         }
         else{
-            //[ProgressHUD dismiss];
             [ProgressHUD showError:@"上传失败"];
+            
+            //显示重传按钮
+            [self addReuploadView];
 
         }
         
@@ -154,13 +206,26 @@
         
         NSLog(@"asi error: %@",request.error.debugDescription);
         
+        //显示重传按钮
+        [self addReuploadView];
+        
     }];
     
     [request startAsynchronous];
 }
 
+//数组转字符串
+-(NSString *) arrToString:(NSMutableArray *)array
+{
+    NSString *str = [[[NSString alloc]init]autorelease];
+    for (int i=0; i<[array count]; i++) {
+        str = [str stringByAppendingFormat:@"%@_", [array objectAtIndex:i]];
+    }
+    
+    return str;
+}
 
-//该三个函数未实现
+#pragma -mark 视图切换函数
 - (void)transitionAwayFrom {
 }
 
@@ -169,6 +234,8 @@
 
 - (void)finishedTransition:(id)sender {
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -113,7 +113,7 @@
                     for(int i = 200; i < 200+4;i++){
                         if (button.tag == i){
                             [(UIButton *)button setBackgroundImage:[UIImage imageNamed:[_btnPictureArray objectAtIndex: (i-200)*2]] forState:UIControlStateNormal];
-                            [(UIButton *)button setFrame:CGRectMake(578+30, 227+20+40*(i-200), 132, 38)];
+                            [(UIButton *)button setFrame:CGRectMake(578+34, 227+30+40*(i-200), 132, 38)];
                         }
                     }
                 }
@@ -129,7 +129,7 @@
                     for(int i = 200; i < 200+4;i++){
                         if (button.tag == i){
                             [(UIButton *)button setBackgroundImage:[UIImage imageNamed:[_btnPictureArray objectAtIndex: (i-200)*2]] forState:UIControlStateNormal];
-                            [(UIButton *)button setFrame:CGRectMake(394+30, 345+20+40*(i-200), 132, 38)];
+                            [(UIButton *)button setFrame:CGRectMake(394+34, 345+30+40*(i-200), 132, 38)];
                         }
                     }
                 }
@@ -144,7 +144,7 @@
                     for(int i = 200; i < 200+4;i++){
                         if (button.tag == i){
                             [(UIButton *)button setBackgroundImage:[UIImage imageNamed:[_btnPictureArray objectAtIndex: (i-200)*2]] forState:UIControlStateNormal];
-                            [(UIButton *)button setFrame:CGRectMake(298+30, 470+20+40*(i-200), 132, 38)];
+                            [(UIButton *)button setFrame:CGRectMake(298+34, 470+30+40*(i-200), 132, 38)];
                         }
                     }
                 }

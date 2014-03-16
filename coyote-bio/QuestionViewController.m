@@ -196,32 +196,29 @@
         case 200:
         {
             _buttonNum = 200;
-            if (_choiceView == nil) {
-                _choiceView = [[ChoiceView alloc]initWithDelegate:self];
-            }
-            [_choiceView resetViewLocation:_buttonNum];
-            [self.view addSubview:_choiceView];
+            [self addSpecialView];
             break;
         }
         case 201:
             _buttonNum = 201;
-            if (_choiceView == nil) {
-                _choiceView = [[ChoiceView alloc]initWithDelegate:self];
-            }
-            [_choiceView resetViewLocation:_buttonNum];
-            [self.view addSubview:_choiceView];
+            [self addSpecialView];
             break;
         case 202:
             _buttonNum = 202;
-            if (_choiceView == nil) {
-                _choiceView = [[ChoiceView alloc]initWithDelegate:self];
-            }
-            [_choiceView resetViewLocation:_buttonNum];
-            [self.view addSubview:_choiceView];
+            [self addSpecialView];
             break;
         default:
             break;
     }
+}
+
+-(void)addSpecialView
+{
+    if (_choiceView == nil) {
+        _choiceView = [[ChoiceView alloc]initWithDelegate:self];
+    }
+    [_choiceView resetViewLocation:_buttonNum];
+    [self.view addSubview:_choiceView];
 }
 
 //划动手势
@@ -231,17 +228,17 @@
     //判断是上下左右
     switch (direction) {
         case UISwipeGestureRecognizerDirectionUp:
-            NSLog(@"up");
+            //NSLog(@"up");
             break;
         case UISwipeGestureRecognizerDirectionDown:
-            NSLog(@"down");
+            //NSLog(@"down");
             break;
         case UISwipeGestureRecognizerDirectionLeft:
             NSLog(@"left");
             [self refreshView];  //滑动后切换视图
             break;
         case UISwipeGestureRecognizerDirectionRight:
-            NSLog(@"right");
+            //NSLog(@"right");
             break;
         default:
             break;
@@ -330,6 +327,7 @@
     }
 }
 
+//数组转字符串
 -(NSString *) arrToString:(NSMutableArray *)array
 {
     NSString *str = [[[NSString alloc]init]autorelease];
@@ -379,19 +377,22 @@
 {
     NSArray *ansABC = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D", nil];
     NSArray *arr = [NSArray arrayWithObjects:@"05Txt_1.jpg",@"05Txt_2.jpg", @"05Txt_3.jpg",@"05Txt_4.jpg", nil];
-    
+    //区分是哪个按钮的响应
     switch (_buttonNum) {
         case 200:
             [_specialButton1 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex]] forState:UIControlStateNormal];
+            [_specialButton1 setFrame:CGRectMake(459, 238, 140, 50)];
             [_question5Answer replaceCharactersInRange:NSMakeRange(0, 1) withString:[ansABC objectAtIndex:buttonIndex]];
             NSLog(@"ANSWER5: %@",_question5Answer);
             break;
         case 201:
             [_specialButton2 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex]] forState:UIControlStateNormal];
+            [_specialButton2 setFrame:CGRectMake(282, 356, 140, 50)];
             [_question5Answer replaceCharactersInRange:NSMakeRange(1, 1) withString:[ansABC objectAtIndex:buttonIndex]];
             break;
         case 202:
             [_specialButton3 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex]] forState:UIControlStateNormal];
+            [_specialButton3 setFrame:CGRectMake(181, 477, 140, 50)];
             [_question5Answer replaceCharactersInRange:NSMakeRange(2, 1) withString:[ansABC objectAtIndex:buttonIndex]];
             break;
         default:
@@ -450,7 +451,7 @@
     //TODO:
 }
 
-//该三个函数未实现 视图切换
+#pragma -mark 视图切换函数
 - (void)transitionAwayFrom {
 }
 
@@ -466,13 +467,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark -Prepare for Segue
+#pragma mark -Prepare for Segue 传递参数
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ( [segue.identifier isEqualToString:@"QuestionToUpload"]) {
         // To Last View
         
         UploadViewController * dstViewController = (UploadViewController*)segue.destinationViewController;
-        [dstViewController setSampleValue:@"hello"];
+
+        [dstViewController setReplies:_replies];
     }
 }
 
