@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "SegueStatusListener.h"
 #import "MulButtonView.h"
+#import "ChoiceView.h"
 
-@interface QuestionViewController : UIViewController<UIActionSheetDelegate,MulButtonDelegate,SegueStatusListener>
+@interface QuestionViewController : UIViewController<UIActionSheetDelegate,MulButtonDelegate,ChoiceViewDelegate,SegueStatusListener>
 
 @property (nonatomic) int count;
 @property (nonatomic, retain) NSMutableArray *questionList;
@@ -31,6 +32,6 @@
 @property (nonatomic, retain) UIButton *specialButton2;
 @property (nonatomic, retain) UIButton *specialButton3;
 @property (nonatomic, retain) MulButtonView *mulButtonView;
-@property (nonatomic, retain) UIActionSheet *actionSheet;
+@property (nonatomic, retain) ChoiceView *choiceView;
 
 @end

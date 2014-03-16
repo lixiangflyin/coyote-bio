@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "SegueStatusListener.h"
-#import "EndView.h"
 
-@interface UploadViewController : UIViewController<EndViewDelegate,SegueStatusListener>
 
-@property (nonatomic, retain) EndView *endView;
+@interface UploadViewController : UIViewController<SegueStatusListener>
+
 @property (nonatomic, retain) NSMutableDictionary *uploadParma;
+
+@property (nonatomic, retain) NSString * sampleValue;
 
 @end

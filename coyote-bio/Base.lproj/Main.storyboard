@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" id="QHg-yy-cLR"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="bA7-Hz-8ri" kind="custom" identifier="QuestionToUpload" customClass="FlipSegue" id="mAN-3X-XhC"/>
+                        <segue destination="bA7-Hz-8ri" kind="custom" identifier="QuestionToUpload" customClass="NSBSimpleSegue" id="mAN-3X-XhC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz5-sX-rIu" userLabel="First Responder" sceneMemberID="firstResponder"/>

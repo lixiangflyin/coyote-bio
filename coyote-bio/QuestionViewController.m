@@ -9,6 +9,7 @@
 #import "QuestionViewController.h"
 #import "ProgressHUD.h"
 #import "Toolkit.h"
+#import "UploadViewController.h"
 
 @interface QuestionViewController ()
 
@@ -25,7 +26,7 @@
     [_specialButton1 release];
     [_specialButton2 release];
     [_specialButton3 release];
-    [_actionSheet release];
+    [_choiceView release];
     [_questionList release];
     [_replies release];
     [_uploadParma release];
@@ -193,16 +194,30 @@
             [self refreshView];
             break;
         case 200:
+        {
             _buttonNum = 200;
-            [self showSheet];
+            if (_choiceView == nil) {
+                _choiceView = [[ChoiceView alloc]initWithDelegate:self];
+            }
+            [_choiceView resetViewLocation:_buttonNum];
+            [self.view addSubview:_choiceView];
             break;
+        }
         case 201:
             _buttonNum = 201;
-            [self showSheet];
+            if (_choiceView == nil) {
+                _choiceView = [[ChoiceView alloc]initWithDelegate:self];
+            }
+            [_choiceView resetViewLocation:_buttonNum];
+            [self.view addSubview:_choiceView];
             break;
         case 202:
             _buttonNum = 202;
-            [self showSheet];
+            if (_choiceView == nil) {
+                _choiceView = [[ChoiceView alloc]initWithDelegate:self];
+            }
+            [_choiceView resetViewLocation:_buttonNum];
+            [self.view addSubview:_choiceView];
             break;
         default:
             break;
@@ -350,6 +365,7 @@
     }
 }
 
+//添加三个特殊按钮
 -(void) addSpecialButton
 {
     [self createSpecialButton:@"btn1" :498 :229];
@@ -358,76 +374,25 @@
     
 }
 
-//显示多选sheetView
-- (void)showSheet {
-    if (_actionSheet == nil) {
-        _actionSheet = [[UIActionSheet alloc]
-                        initWithTitle:@"请选择答案："
-                        delegate:self
-                        cancelButtonTitle:@"取消"
-                        destructiveButtonTitle:@"A、需要"
-                        otherButtonTitles:@"B、不需要", @"C、可以",@"D、不可以",nil];
-        _actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-    }
-    
-    [_actionSheet showInView:self.view];
-}
-
--(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == 0) {
-        
-        NSLog(@"0");
-        [self setButtonTitle:buttonIndex];
-        
-        
-    }else if (buttonIndex == 1) {
-        
-        NSLog(@"1");
-        [self setButtonTitle:buttonIndex];
-        
-    }else if(buttonIndex == 2) {
-        
-        NSLog(@"2");
-        [self setButtonTitle:buttonIndex];
-        
-    }else if(buttonIndex == 3) {
-        
-        NSLog(@"3");
-        [self setButtonTitle:buttonIndex];
-    }
-    
-    [_replies replaceObjectAtIndex:_count-1 withObject:_question5Answer];
-    
-}
-
 //第五题特殊处理
 -(void) setButtonTitle:(NSInteger)buttonIndex
 {
     NSArray *ansABC = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D", nil];
-    NSArray *arr = [NSArray arrayWithObjects:@"需要",@"不需要", @"可以",@"不可以", nil];
+    NSArray *arr = [NSArray arrayWithObjects:@"05Txt_1.jpg",@"05Txt_2.jpg", @"05Txt_3.jpg",@"05Txt_4.jpg", nil];
     
     switch (_buttonNum) {
         case 200:
-            [_specialButton1 setBackgroundImage:[UIImage imageNamed:@"nil"] forState:UIControlStateNormal];
-            [_specialButton1 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-            [_specialButton1 setTitle: [arr objectAtIndex:buttonIndex] forState:UIControlStateNormal];
+            [_specialButton1 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex]] forState:UIControlStateNormal];
             [_question5Answer replaceCharactersInRange:NSMakeRange(0, 1) withString:[ansABC objectAtIndex:buttonIndex]];
             NSLog(@"ANSWER5: %@",_question5Answer);
             break;
         case 201:
-            [_specialButton2 setBackgroundImage:nil forState:UIControlStateNormal];
-            [_specialButton2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-            [_specialButton2 setTitle: [arr objectAtIndex:buttonIndex] forState:UIControlStateNormal];
+            [_specialButton2 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex]] forState:UIControlStateNormal];
             [_question5Answer replaceCharactersInRange:NSMakeRange(1, 1) withString:[ansABC objectAtIndex:buttonIndex]];
-            //NSLog(@"ANSWER5: %@",_question5Answer);
             break;
         case 202:
-            [_specialButton3 setBackgroundImage:nil forState:UIControlStateNormal];
-            [_specialButton3 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-            [_specialButton3 setTitle: [arr objectAtIndex:buttonIndex] forState:UIControlStateNormal];
+            [_specialButton3 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex]] forState:UIControlStateNormal];
             [_question5Answer replaceCharactersInRange:NSMakeRange(2, 1) withString:[ansABC objectAtIndex:buttonIndex]];
-            //NSLog(@"ANSWER5: %@",_question5Answer);
             break;
         default:
             break;
@@ -435,12 +400,40 @@
 }
 
 
-#pragma -mark largePhotoDelegate
--(void)removeLargePhotoView
+#pragma -mark ChoiceViewDelegate
+-(void)removeChoiceView
 {
-    //[_largePhotoView removeFromSuperview];
+    [_choiceView removeFromSuperview];
 }
 
+-(void)clickChoiceValue:(int)btnNumber
+{
+    if (btnNumber == 0) {
+        
+        NSLog(@"0");
+        [self setButtonTitle:btnNumber];
+        
+        
+    }else if (btnNumber == 1) {
+        
+        NSLog(@"1");
+        [self setButtonTitle:btnNumber];
+        
+    }else if(btnNumber == 2) {
+        
+        NSLog(@"2");
+        [self setButtonTitle:btnNumber];
+        
+    }else if(btnNumber == 3) {
+        
+        NSLog(@"3");
+        [self setButtonTitle:btnNumber];
+    }
+    
+    [_replies replaceObjectAtIndex:_count-1 withObject:_question5Answer];
+    
+    [self removeChoiceView];
+}
 
 #pragma -mark MulButtonViewDelegate 委托
 //gaiAPP只用到这个
@@ -457,7 +450,7 @@
     //TODO:
 }
 
-//该三个函数未实现
+//该三个函数未实现 视图切换
 - (void)transitionAwayFrom {
 }
 
@@ -471,6 +464,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -Prepare for Segue
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ( [segue.identifier isEqualToString:@"QuestionToUpload"]) {
+        // To Last View
+        
+        UploadViewController * dstViewController = (UploadViewController*)segue.destinationViewController;
+        [dstViewController setSampleValue:@"hello"];
+    }
 }
 
 @end

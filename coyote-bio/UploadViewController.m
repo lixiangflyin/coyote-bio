@@ -46,13 +46,15 @@
     self.view.frame = viewFrame;
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
-    NSString *imagePath = [[NSBundle mainBundle]pathForResource:@"End" ofType:@"png"];
+    NSString *imagePath = [[NSBundle mainBundle]pathForResource:@"End_Background" ofType:@"jpg"];
     [imageView setImage:[UIImage imageWithContentsOfFile:imagePath]];
     imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:imageView];
     [imageView release];
     
     //[self simpleToServer];
+    
+    NSLog(@"sample: %@",_sampleValue);
     
     [self addAnswersView];
     
@@ -157,14 +159,6 @@
     [request startAsynchronous];
 }
 
-#pragma -mark RemoveVideoViewDelegate 委托
--(void)back
-{
-    [_endView removeFromSuperview];
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"updateView" object:nil];
-    [self.navigationController popViewControllerAnimated:NO];
-    //[self dealloc];
-}
 
 //该三个函数未实现
 - (void)transitionAwayFrom {

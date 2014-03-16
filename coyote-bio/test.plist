@@ -3,21 +3,21 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>button_location</key>
+		<array>
+			<string>195</string>
+			<string>185</string>
+			<string>785</string>
+			<string>185</string>
+			<string>195</string>
+			<string>425</string>
+			<string>785</string>
+			<string>425</string>
+		</array>
 		<key>question</key>
 		<string>11月17日，清华大学宣布，清华大学生命学院罗永章教授研究组在国际上首次发现热休克蛋白90α（Hsp90α）为一个全新的肿瘤标志物，自主研发的Hsp90α定量检测试剂盒已通过临床试验验证，获得了国家第三类（最高类别）医疗器械证书，并通过了欧盟认证。这也是人Hsp90α被发现24年来，全球首个将其用于临床的产品。</string>
 		<key>test_picture</key>
 		<string>01.jpg</string>
-		<key>button_location</key>
-		<array>
-			<string>197</string>
-			<string>188</string>
-			<string>785</string>
-			<string>188</string>
-			<string>197</string>
-			<string>428</string>
-			<string>785</string>
-			<string>428</string>
-		</array>
 		<key>sign</key>
 		<string>1</string>
 		<key>answer</key>
@@ -39,14 +39,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>197</string>
-			<string>188</string>
+			<string>195</string>
+			<string>185</string>
 			<string>785</string>
-			<string>188</string>
-			<string>197</string>
-			<string>428</string>
+			<string>185</string>
+			<string>195</string>
+			<string>425</string>
 			<string>785</string>
-			<string>428</string>
+			<string>425</string>
 		</array>
 		<key>detail_picture</key>
 		<array>
@@ -73,14 +73,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>197</string>
-			<string>188</string>
+			<string>195</string>
+			<string>185</string>
 			<string>785</string>
-			<string>188</string>
-			<string>197</string>
-			<string>428</string>
+			<string>185</string>
+			<string>195</string>
+			<string>425</string>
 			<string>785</string>
-			<string>428</string>
+			<string>425</string>
 		</array>
 		<key>detail_picture</key>
 		<array>
@@ -107,11 +107,11 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>227</string>
+			<string>280</string>
 			<string>145</string>
 			<string>690</string>
 			<string>145</string>
-			<string>227</string>
+			<string>280</string>
 			<string>585</string>
 			<string>690</string>
 			<string>585</string>
@@ -142,7 +142,7 @@
 		<key>button_location</key>
 		<array>
 			<string>498</string>
-			<string>229</string>
+			<string>145</string>
 			<string>316</string>
 			<string>342</string>
 			<string>216</string>
@@ -175,13 +175,13 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>156</string>
-			<string>156</string>
-			<string>156</string>
-			<string>286</string>
-			<string>156</string>
-			<string>410</string>
-			<string>156</string>
+			<string>140</string>
+			<string>158</string>
+			<string>140</string>
+			<string>283</string>
+			<string>140</string>
+			<string>408</string>
+			<string>140</string>
 			<string>533</string>
 		</array>
 		<key>detail_picture</key>
@@ -209,14 +209,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>187</string>
-			<string>232</string>
-			<string>187</string>
-			<string>322</string>
-			<string>501</string>
-			<string>394</string>
-			<string>501</string>
-			<string>488</string>
+			<string>220</string>
+			<string>241</string>
+			<string>560</string>
+			<string>241</string>
+			<string>220</string>
+			<string>381</string>
+			<string>220</string>
+			<string>522</string>
 		</array>
 		<key>detail_picture</key>
 		<array>
@@ -243,14 +243,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>175</string>
-			<string>200</string>
-			<string>175</string>
-			<string>298</string>
-			<string>175</string>
-			<string>396</string>
-			<string>175</string>
-			<string>494</string>
+			<string>434</string>
+			<string>220</string>
+			<string>434</string>
+			<string>327</string>
+			<string>434</string>
+			<string>435</string>
+			<string>434</string>
+			<string>542</string>
 		</array>
 		<key>detail_picture</key>
 		<array>
@@ -277,14 +277,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>107</string>
-			<string>348</string>
-			<string>805</string>
-			<string>422</string>
-			<string>107</string>
-			<string>502</string>
-			<string>805</string>
-			<string>568</string>
+			<string>88</string>
+			<string>342</string>
+			<string>88</string>
+			<string>418</string>
+			<string>88</string>
+			<string>494</string>
+			<string>80</string>
+			<string>570</string>
 		</array>
 		<key>detail_picture</key>
 		<array>
@@ -311,14 +311,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>155</string>
-			<string>200</string>
-			<string>155</string>
-			<string>298</string>
-			<string>155</string>
-			<string>396</string>
-			<string>155</string>
-			<string>494</string>
+			<string>149</string>
+			<string>207</string>
+			<string>149</string>
+			<string>322</string>
+			<string>149</string>
+			<string>418</string>
+			<string>149</string>
+			<string>541</string>
 		</array>
 		<key>detail_picture</key>
 		<array>
@@ -345,14 +345,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>161</string>
-			<string>272</string>
-			<string>760</string>
-			<string>272</string>
-			<string>161</string>
-			<string>482</string>
-			<string>760</string>
-			<string>482</string>
+			<string>148</string>
+			<string>269</string>
+			<string>774</string>
+			<string>269</string>
+			<string>148</string>
+			<string>488</string>
+			<string>774</string>
+			<string>488</string>
 		</array>
 		<key>detail_picture</key>
 		<array>
@@ -379,14 +379,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>435</string>
-			<string>152</string>
-			<string>435</string>
-			<string>256</string>
-			<string>435</string>
-			<string>400</string>
-			<string>435</string>
-			<string>546</string>
+			<string>428</string>
+			<string>169</string>
+			<string>428</string>
+			<string>280</string>
+			<string>428</string>
+			<string>416</string>
+			<string>428</string>
+			<string>530</string>
 		</array>
 		<key>detail_picture</key>
 		<array>
@@ -413,14 +413,14 @@
 	<dict>
 		<key>button_location</key>
 		<array>
-			<string>175</string>
-			<string>200</string>
-			<string>175</string>
-			<string>300</string>
-			<string>175</string>
-			<string>400</string>
-			<string>175</string>
-			<string>500</string>
+			<string>515</string>
+			<string>199</string>
+			<string>515</string>
+			<string>316</string>
+			<string>515</string>
+			<string>432</string>
+			<string>515</string>
+			<string>549</string>
 		</array>
 		<key>detail_picture</key>
 		<array>

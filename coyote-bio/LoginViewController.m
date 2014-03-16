@@ -48,7 +48,7 @@
     imageView.frame = self.view.bounds;
     
     NSString *path = [[NSBundle mainBundle] bundlePath];  //获取路径
-    NSString *imagePath = [path stringByAppendingPathComponent:@"Start.png"];
+    NSString *imagePath = [path stringByAppendingPathComponent:@"Start_Background.jpg"];
     [imageView setImage:[UIImage imageWithContentsOfFile: imagePath]];
     imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:imageView];
