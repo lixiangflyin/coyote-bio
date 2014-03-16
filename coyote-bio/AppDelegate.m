@@ -7,12 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "Toolkit.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [application setStatusBarHidden:YES];
+    
+    [Toolkit saveTotalTime:@"3000"];
+    [Toolkit saveRecordTime:@"2"];
+    [Toolkit saveNoticeTime:@"3"];
+    [Toolkit saveTestUrl:@"192.168.191.1"];
+    
     return YES;
 }
 							
