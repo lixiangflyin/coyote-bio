@@ -475,6 +475,8 @@
         UploadViewController * dstViewController = (UploadViewController*)segue.destinationViewController;
 
         [dstViewController setReplies:_replies];
+        
+        dstViewController = nil;
     }
 }
 

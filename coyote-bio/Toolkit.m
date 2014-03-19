@@ -38,7 +38,7 @@
 + (void)saveTestUrl:(NSString *)url
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:url forKey:@"testUrl"];
+    [defaults setObject:url forKey:@"ip_test"];
 }
 
 + (void)saveUploadFileName:(NSString *)fileName
@@ -74,7 +74,7 @@
 + (NSString *)getTestUrl
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return (NSString *)[defaults objectForKey:@"testUrl"];
+    return (NSString *)[defaults objectForKey:@"ip_test"];
 }
 
 + (NSString *)getUploadFileName
@@ -83,6 +83,10 @@
     return (NSString *)[defaults objectForKey:@"uploadFileName"];
 }
 
-
++ (BOOL)getLocalAccess
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return [[defaults objectForKey:@"local_access"]boolValue];
+}
 
 @end

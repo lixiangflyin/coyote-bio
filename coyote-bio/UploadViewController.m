@@ -64,9 +64,17 @@
     [self.view addSubview:imageView];
     [imageView release];
     
-    [self simpleToServer];
+    NSLog(@"access: %d",[Toolkit getLocalAccess]);
+    //是否本地访问
+    if ([Toolkit getLocalAccess] == YES) {
+        [self addAnswersView];
+    }
+    else{
+        [self simpleToServer];
+    }
+    
+    NSLog(@"reply: %@",_replies);
 
-    //[self addAnswersView];
     
     
 }
@@ -107,18 +115,43 @@
         NSDictionary *dic = [_rightAnswers objectAtIndex:i];
         NSArray *arr = [dic objectForKey:@"explaination"];
         if ([[_replies objectAtIndex:i] isEqualToString:[dic objectForKey:@"reply"]]) {
-            NSString *str1 = [arr objectAtIndex:0];
-            str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,str1];
+            if (i == 4) {
+                str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,@"正确"];
+            }
+            else{
+                NSString *str1 = [arr objectAtIndex:[self getReplyNumber:[_replies objectAtIndex:i]]];
+                str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,str1];
+            }
         }
         else
         {
-            NSString *str2 = [arr objectAtIndex:1];
-            str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,str2];
+            if (i == 4) {
+                str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,@"错误"];
+            }
+            else{
+                NSString *str1 = [arr objectAtIndex:[self getReplyNumber:[_replies objectAtIndex:i]]];
+                str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,str1];
+            }
         }
     }
     
     return str;
 }
+
+-(int)getReplyNumber:(NSString *)reply
+{
+    if ([reply isEqualToString:@"A"])
+        return 0;
+    else if ([reply isEqualToString:@"B"])
+        return 1;
+    else if ([reply isEqualToString:@"C"])
+        return 2;
+    else if ([reply isEqualToString:@"D"])
+        return 3;
+    else
+        return 100;
+}
+
 
 //视图切换
 -(void)reAgain
@@ -134,6 +167,7 @@
     [imageView setImage:[UIImage imageWithContentsOfFile:imagePath]];
     imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:imageView];
+    [imagePath release];
     
     UIButton *reuploadBtn = [[UIButton alloc]init];
     reuploadBtn.frame = CGRectMake(939, 602, 50, 50);

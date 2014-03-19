@@ -22,5 +22,5 @@
 + (NSString *)getNoticeTime;
 + (NSString *)getTestUrl;
 + (NSString *)getUploadFileName;
-
++ (BOOL)getLocalAccess;
 @end

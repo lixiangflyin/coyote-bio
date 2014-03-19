@@ -61,6 +61,10 @@
 			<string>IP地址</string>
 			<key>Key</key>
 			<string>ip_test</string>
+			<key>AutocorrectionType</key>
+			<string>yes</string>
+			<key>DefaultValue</key>
+			<string>127.0.0.1</string>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -69,22 +73,34 @@
 			<string>全程时间(秒计)</string>
 			<key>Key</key>
 			<string>totalTime</string>
+			<key>DefaultValue</key>
+			<string>3000</string>
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
+			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>录音时间(秒计)</string>
-			<key>Key</key>
-			<string>recordTime</string>
+			<string>开发人员</string>
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
+			<string>PSTitleValueSpecifier</string>
 			<key>Title</key>
-			<string>录音准备时间(秒计)</string>
+			<string>架构设计</string>
 			<key>Key</key>
-			<string>noticeTime</string>
+			<string>architecture_design</string>
+			<key>DefaultValue</key>
+			<string>杨安康</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>程序设计</string>
+			<key>Key</key>
+			<string>program_design</string>
+			<key>DefaultValue</key>
+			<string>李翔</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

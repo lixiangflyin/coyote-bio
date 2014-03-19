@@ -15,10 +15,10 @@
 {
     [application setStatusBarHidden:YES];
     
-    [Toolkit saveTotalTime:@"3000"];
-    [Toolkit saveRecordTime:@"2"];
-    [Toolkit saveNoticeTime:@"3"];
-    [Toolkit saveTestUrl:@"127.0.0.1"];
+    //[Toolkit saveTotalTime:@"3000"];
+    //[Toolkit saveRecordTime:@"2"];
+    //[Toolkit saveNoticeTime:@"3"];
+    //[Toolkit saveTestUrl:@"127.0.0.1"];
     
     return YES;
 }

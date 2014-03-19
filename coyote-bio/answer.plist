@@ -3,121 +3,147 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>正确</string>
+			<string>错误【错误分析】不了解生物和非生物的含义 【学习建议】学习生物与非生物的本质区别，认识生物的共同特征（配图1）</string>
+			<string>错误【错误分析】不了解生物和非生物的含义 【学习建议】学习生物与非生物的本质区别，认识生物的共同特征（配图1）</string>
+			<string>错误【错误分析】1、不了解生物和非生物的含义 2、不知道蘑菇也属于生物 【学习建议】1、学习生物与非生物的本质区别，认识生物的共同特征（配图1） 2、认识蘑菇是真菌的一种，真菌也是生物（配图2），具有生物的共同特征。</string>
+		</array>
 		<key>reply</key>
 		<string>A</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】1、不了解生物和非生物的含义 2、不了解生物的分类。【学习建议】1、学习生物与非生物的本质区别，认识生物的共同特征（配图1） 2、学习生物的分类方式，以及各界的主要代表生物。（配图2）</string>
+			<string>错误【错误分析】不了解生物的分类。【学习建议】学习生物的分类方式，以及各界的主要代表生物。（配图2）</string>
+			<string>正确</string>
+			<string>错误【错误分析】不了解生物的分类【学习建议】学习生物的分类方式，以及各界的主要代表生物 </string>
+		</array>
 		<key>reply</key>
 		<string>B</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】1、不了解生物和非生物的含义 2、不了解生物的分类【学习建议】1、学习生物与非生物的本质区别，认识生物的共同特征 2、学习生物的分类方式，以及各界的主要代表生物</string>
+			<string>正确</string>
+			<string>错误【错误分析】不了解生物的分类【学习建议】学习生物的分类方式，以及各界的主要代表生物</string>
+			<string>错误【错误分析】1、不了解生物的分类  2、将蘑菇误认为植物 【学习建议】1、学习生物的分类方式，以及各界的主要代表生物   2、比较蘑菇与其他植物的区别，认识真菌界与植物界不一样的特征（真菌不分根、茎、叶，不含有叶绿素，不能自己合成食物）</string>
+		</array>
 		<key>reply</key>
 		<string>D</string>
+	</dict>
+	<dict>
 		<key>explaination</key>
 		<array>
 			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
+			<string>错误【错误分析】不了解食物链的含义 【学习建议】学习食物链的含义，是指生态系统内不同生物之间在营养关系中形成的一环套一环的链条式关系。植物所固定的能量通过一系列的捕食和被捕食的关系通过食物链在生态系统中传递</string>
+			<string>错误【错误分析】不了解食物链中箭头的含义 【学习建议】认识到食物链中不同生物之间要用箭头表示出物质和能量流动的方向。因此书写食物链一般是从生态系统中能量传递起始的生产者开始，并用箭头指向捕食者</string>
+			<string>错误【错误分析】不了解食物链中箭头的含义 【学习建议】认识到食物链中不同生物之间要用箭头表示出物质和能量流动的方向。因此书写食物链一般是从生态系统中能量传递起始的生产者开始，并用箭头指向捕食者</string>
 		</array>
-	</dict>
-	<dict>
 		<key>reply</key>
 		<string>A</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
 		<key>reply</key>
-		<string>D</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
+		<string>DAB</string>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
 		<key>reply</key>
 		<string>C</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
 		<key>reply</key>
 		<string>A</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
 		<key>reply</key>
 		<string>B</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
 		<key>reply</key>
 		<string>B</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
 		<key>reply</key>
 		<string>A</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
 		<key>reply</key>
 		<string>A</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
 		<key>reply</key>
 		<string>C</string>
-		<key>explaination</key>
-		<array>
-			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
-		</array>
 	</dict>
 	<dict>
-		<key>reply</key>
-		<string>B</string>
 		<key>explaination</key>
 		<array>
+			<string>错误</string>
 			<string>正确</string>
-			<string>【错误分析】不了解食物链的含义 【学习建议】建议学习食物链的含义</string>
+			<string>错误</string>
+			<string>错误</string>
 		</array>
+		<key>reply</key>
+		<string>B</string>
 	</dict>
 </array>
 </plist>

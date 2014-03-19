@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1814635C18D9C68C0001FAD1 /* new_answer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1814635B18D9C68C0001FAD1 /* new_answer.plist */; };
 		18859FEB18D53E1A002BCF2B /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18859FAE18D53E1A002BCF2B /* readme.txt */; };
 		18859FEC18D53E1A002BCF2B /* BtnStart_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18859FB018D53E1A002BCF2B /* BtnStart_1.jpg */; };
 		18859FED18D53E1A002BCF2B /* BtnStart_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18859FB118D53E1A002BCF2B /* BtnStart_2.jpg */; };
@@ -123,6 +124,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1814635B18D9C68C0001FAD1 /* new_answer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = new_answer.plist; sourceTree = "<group>"; };
 		18859FAE18D53E1A002BCF2B /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		18859FB018D53E1A002BCF2B /* BtnStart_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BtnStart_1.jpg; sourceTree = "<group>"; };
 		18859FB118D53E1A002BCF2B /* BtnStart_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BtnStart_2.jpg; sourceTree = "<group>"; };
@@ -462,6 +464,7 @@
 				18859FAD18D53E1A002BCF2B /* UI */,
 				18C7A6A618D48DE800B29EC3 /* test.plist */,
 				1885A02E18D5CD4E002BCF2B /* answer.plist */,
+				1814635B18D9C68C0001FAD1 /* new_answer.plist */,
 				18C7A69818D4823100B29EC3 /* icon-29x29.png */,
 				18C7A69918D4823100B29EC3 /* icon-40x40.png */,
 				18C7A69A18D4823100B29EC3 /* icon-76x76.png */,
@@ -711,6 +714,7 @@
 				18859FEC18D53E1A002BCF2B /* BtnStart_1.jpg in Resources */,
 				18859FF618D53E1A002BCF2B /* BtnReupload_1.jpg in Resources */,
 				1885A00118D53E1A002BCF2B /* 05Txt_3.jpg in Resources */,
+				1814635C18D9C68C0001FAD1 /* new_answer.plist in Resources */,
 				18859FF918D53E1A002BCF2B /* UploadErrorView_Background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
