@@ -57,6 +57,7 @@
 	//获取测试数据
     NSString *path = [[NSBundle mainBundle] bundlePath];
 	NSString *plistPath = [path stringByAppendingPathComponent:@"test.plist"];
+    NSLog(@"filePath: %@",plistPath);
     NSArray *list = [NSMutableArray arrayWithContentsOfFile:plistPath];
     //NSLog(@"%@",list);
     [_questionList addObjectsFromArray:list];
@@ -299,6 +300,7 @@
         UIAlertView * alertview = [[UIAlertView alloc] initWithTitle:@"提示" message:@"此刻是否完成提交！！！" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
         [alertview show];
         [alertview release];
+        alertview = nil;
         
     }
 }

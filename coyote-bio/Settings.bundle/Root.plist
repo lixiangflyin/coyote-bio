@@ -16,7 +16,7 @@
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>DefaultValue</key>
-			<string>2014-03-01-15</string>
+			<string>version-1.2</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
