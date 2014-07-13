@@ -47,6 +47,13 @@
     [defaults setObject:fileName forKey:@"uploadFileName"];
 }
 
++ (void)saveLocalAccess:(BOOL)local_access
+
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:local_access forKey:@"local_access"];
+}
+
 + (NSString *)getUserName
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

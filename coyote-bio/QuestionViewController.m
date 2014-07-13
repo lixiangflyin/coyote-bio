@@ -146,11 +146,11 @@
     dispatch_resume(_timer);
     
     //题数显示
-    _numberLabel = [[UILabel alloc]initWithFrame:CGRectMake(00, 50, 80, 60)];
+    _numberLabel = [[UILabel alloc]initWithFrame:CGRectMake(2, 50, 80, 60)];
     [_numberLabel setText:[NSString stringWithFormat:@"%d/%lu",_count,(unsigned long)[_questionList count]]];
     _numberLabel.font = [UIFont boldSystemFontOfSize:23];
     _numberLabel.textColor = [UIColor whiteColor];
-    _numberLabel.textAlignment = NSTextAlignmentCenter;
+    _numberLabel.textAlignment = NSTextAlignmentLeft;
     [self.view addSubview:_numberLabel];
 }
 
@@ -388,12 +388,12 @@
             NSLog(@"ANSWER5: %@",_question5Answer);
             break;
         case 201:
-            [_specialButton2 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex]] forState:UIControlStateNormal];
+            [_specialButton2 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex+2]] forState:UIControlStateNormal];
             [_specialButton2 setFrame:CGRectMake(282, 356, 140, 50)];
             [_question5Answer replaceCharactersInRange:NSMakeRange(1, 1) withString:[ansABC objectAtIndex:buttonIndex]];
             break;
         case 202:
-            [_specialButton3 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex]] forState:UIControlStateNormal];
+            [_specialButton3 setBackgroundImage:[UIImage imageNamed:[arr objectAtIndex:buttonIndex+2]] forState:UIControlStateNormal];
             [_specialButton3 setFrame:CGRectMake(181, 477, 140, 50)];
             [_question5Answer replaceCharactersInRange:NSMakeRange(2, 1) withString:[ansABC objectAtIndex:buttonIndex]];
             break;
@@ -476,6 +476,7 @@
         
         UploadViewController * dstViewController = (UploadViewController*)segue.destinationViewController;
 
+        //传值
         [dstViewController setReplies:_replies];
         
         dstViewController = nil;

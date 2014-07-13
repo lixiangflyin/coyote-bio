@@ -16,6 +16,7 @@
 + (void)saveNoticeTime:(NSString *)noticeTime;
 + (void)saveTestUrl:(NSString *)url;
 + (void)saveUploadFileName:(NSString *)fileName;
++ (void)saveLocalAccess:(BOOL)local_access;
 + (NSString *)getUserName;
 + (NSString *)getTotalTime;
 + (NSString *)getRecordTime;

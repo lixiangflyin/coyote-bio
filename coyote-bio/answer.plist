@@ -16,10 +16,76 @@
 	<dict>
 		<key>explaination</key>
 		<array>
-			<string>错误【错误分析】1、不了解生物和非生物的含义 2、不了解生物的分类。【学习建议】1、学习生物与非生物的本质区别，认识生物的共同特征（配图1） 2、学习生物的分类方式，以及各界的主要代表生物。（配图2）</string>
-			<string>错误【错误分析】不了解生物的分类。【学习建议】学习生物的分类方式，以及各界的主要代表生物。（配图2）</string>
 			<string>正确</string>
+			<string>错误【错误分析】不了解生物的分类。【学习建议】学习生物的分类方式，以及各界的主要代表生物。（配图2）</string>
+			<string>错误【错误分析】1、不了解生物和非生物的含义 2、不了解生物的分类。【学习建议】1、学习生物与非生物的本质区别，认识生物的共同特征（配图1） 2、学习生物的分类方式，以及各界的主要代表生物。（配图2）</string>
 			<string>错误【错误分析】不了解生物的分类【学习建议】学习生物的分类方式，以及各界的主要代表生物 </string>
+		</array>
+		<key>reply</key>
+		<string>A</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】1、不了解生物和非生物的含义 2、不了解生物的分类【学习建议】1、学习生物与非生物的本质区别，认识生物的共同特征 2、学习生物的分类方式，以及各界的主要代表生物</string>
+			<string>错误【错误分析】1、不了解生物的分类  2、将蘑菇误认为植物 【学习建议】1、学习生物的分类方式，以及各界的主要代表生物   2、比较蘑菇与其他植物的区别，认识真菌界与植物界不一样的特征（真菌不分根、茎、叶，不含有叶绿素，不能自己合成食物）</string>
+			<string>错误【错误分析】不了解生物的分类【学习建议】学习生物的分类方式，以及各界的主要代表生物</string>
+			<string>正确</string>
+		</array>
+		<key>reply</key>
+		<string>D</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】误认为蘑菇属于植物界，但蘑菇属于真菌界 【学习建议】学习生物的分类方式，以及各界的主要代表生物（配图1）</string>
+			<string>错误【错误分析】知道老鹰、蚱蜢、鱼都属于动物，但不知道它们属于不同的纲：老鹰属于鸟纲、蚱蜢属于昆虫纲、鱼属于鱼纲 【学习建议】深入学习动物界的分类方式，以及几个大纲的主要代表生物（配图2）</string>
+			<string>错误【错误分析】知道老鹰、蝴蝶、蝙蝠都属于动物，但不知道它们属于不同的纲：老鹰属于鸟纲、蝴蝶属于昆虫纲、蝙蝠属于哺乳纲 【学习建议】深入学习动物界的分类方式，以及几个大纲的主要代表生物（配图2）</string>
+			<string>正确</string>
+		</array>
+		<key>reply</key>
+		<string>D</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】不知道生物的生存需要，也不知道食物对生物的作用 【学习建议】学习生物生存的基本条件，并了解食物的作用</string>
+			<string>错误【错误分析】知道生物的生存需要食物，但对食物的作用完全不了解【学习建议】学习食物对生物的作用</string>
+			<string>错误【错误分析】知道生物的生存需要食物，但对食物的作用了解不全面 【学习建议】学习食物对生物的作用</string>
+			<string>错误【错误分析】知道生物的生存需要食物，但对食物的作用了解不全面 【学习建议】学习食物对生物的作用</string>
+		</array>
+		<key>reply</key>
+		<string>AAA</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>正确</string>
+			<string>错误</string>
+			<string>错误</string>
+			<string>错误</string>
+		</array>
+		<key>reply</key>
+		<string>A</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误</string>
+			<string>错误</string>
+			<string>正确</string>
+			<string>错误</string>
+		</array>
+		<key>reply</key>
+		<string>C</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】不知道水果蔬菜的保鲜必须减缓其呼吸作用，也不知道影响呼吸速率的 【学习建议】了解在贮藏水果蔬菜时，必须降低其呼吸速率，学习影响呼吸速率的几大因素</string>
+			<string>正确</string>
+			<string>错误【错误分析】不知道水果蔬菜的保鲜必须减缓其呼吸作用，也不知道影响呼吸速率的 【学习建议】了解在贮藏水果蔬菜时，必须降低其呼吸速率，学习影响呼吸速率的几大因素</string>
+			<string>错误【错误分析】知道水果蔬菜的保鲜必须减缓其呼吸作用，也知道降低氧气含量能够减缓呼吸作用，但是冰箱的主要作用不是降低氧气含量，而是降低温度 【学习建议】知识基本掌握，建议多与生活实际相联系</string>
 		</array>
 		<key>reply</key>
 		<string>B</string>
@@ -27,10 +93,43 @@
 	<dict>
 		<key>explaination</key>
 		<array>
-			<string>错误【错误分析】1、不了解生物和非生物的含义 2、不了解生物的分类【学习建议】1、学习生物与非生物的本质区别，认识生物的共同特征 2、学习生物的分类方式，以及各界的主要代表生物</string>
+			<string>错误【错误分析】不知道食物链中每一种生物都有着直接和间接的关系 【学习建议】运用逻辑推理，思考当草数量剧减时，蚂蚱和青蛙的数量变化</string>
 			<string>正确</string>
-			<string>错误【错误分析】不了解生物的分类【学习建议】学习生物的分类方式，以及各界的主要代表生物</string>
-			<string>错误【错误分析】1、不了解生物的分类  2、将蘑菇误认为植物 【学习建议】1、学习生物的分类方式，以及各界的主要代表生物   2、比较蘑菇与其他植物的区别，认识真菌界与植物界不一样的特征（真菌不分根、茎、叶，不含有叶绿素，不能自己合成食物）</string>
+			<string>错误【错误分析】不知道食物链中每一种生物都有着直接和间接的关系 【学习建议】运用逻辑推理，思考当蚂蚱数量剧减时，草和青蛙的数量变化</string>
+			<string>错误【错误分析】不知道食物链中每一种生物都有着直接和间接的关系【学习建议】运用逻辑推理，思考当青蛙数量剧减时，蚂蚱和草的数量变化</string>
+		</array>
+		<key>reply</key>
+		<string>B</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】不知道植物也存在竞争关系 【学习建议】学习生物之间的竞争关系，并阅读资料，了解植物竞争的实例</string>
+			<string>错误【错误分析】不知道同种生物也会争夺资源 【学习建议】学习生物之间的竞争关系，并阅读资料，了解同种生物竞争的实例</string>
+			<string>错误【错误分析】不知道生物竞争关系的内涵 【学习建议】学习生物竞争关系包括哪些方面</string>
+			<string>正确</string>
+		</array>
+		<key>reply</key>
+		<string>D</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】不知道生态系统的含义，或者不认为森林属于生态系统【学习建议】了解生态系统是一定区域内所有生物和非生物环境的总和，并判断森林里的生物与环境因素</string>
+			<string>正确</string>
+			<string>错误【错误分析】不知道生态系统的含义，或者不认为草地属于生态系统 【学习建议】了解生态系统是一定区域内所有生物和非生物环境的总和，并判断草地里的生物与环境因素</string>
+			<string>错误【错误分析】不知道生物圈是地球上最大的生态系统 【学习建议】阅读资料，认识生物圈的含义</string>
+		</array>
+		<key>reply</key>
+		<string>B</string>
+	</dict>
+	<dict>
+		<key>explaination</key>
+		<array>
+			<string>错误【错误分析】不知道食物网中每一种生物都有着直接和间接的关系【学习建议】运用逻辑推理，思考当狐狸数量剧减时，知更鸟、毛毛虫和树的数量变化里的生物与环境因素</string>
+			<string>错误【错误分析】不知道食物网中每一种生物都有着直接和间接的关系 【学习建议】运用逻辑推理，思考当老鼠数量减少时，知更鸟的数量变化。（狐狸的主要食物会变成知更鸟)</string>
+			<string>错误【错误分析】知道食物网中每一种生物都有着直接和间接的关系，但不知道这种关系并不是单一的正比关系 【学习建议】运用逻辑推理，思考当狐狸数量剧减时，知更鸟、老鼠、毛毛虫、草和树的数量变化</string>
+			<string>正确</string>
 		</array>
 		<key>reply</key>
 		<string>D</string>
@@ -39,111 +138,12 @@
 		<key>explaination</key>
 		<array>
 			<string>正确</string>
-			<string>错误【错误分析】不了解食物链的含义 【学习建议】学习食物链的含义，是指生态系统内不同生物之间在营养关系中形成的一环套一环的链条式关系。植物所固定的能量通过一系列的捕食和被捕食的关系通过食物链在生态系统中传递</string>
-			<string>错误【错误分析】不了解食物链中箭头的含义 【学习建议】认识到食物链中不同生物之间要用箭头表示出物质和能量流动的方向。因此书写食物链一般是从生态系统中能量传递起始的生产者开始，并用箭头指向捕食者</string>
-			<string>错误【错误分析】不了解食物链中箭头的含义 【学习建议】认识到食物链中不同生物之间要用箭头表示出物质和能量流动的方向。因此书写食物链一般是从生态系统中能量传递起始的生产者开始，并用箭头指向捕食者</string>
+			<string>错误【错误分析】不知道引起沙尘暴的最主要原因【学习建议】阅读资料，认识到人类盲目地开发森林和草原是引起沙尘暴的主要原因</string>
+			<string>错误【错误分析】不知道引起沙尘暴的最主要原因【学习建议】阅读资料，认识到人类盲目地开发森林和草原是引起沙尘暴的主要原因</string>
+			<string>错误【错误分析】不知道引起沙尘暴的最主要原因【学习建议】阅读资料，认识到人类盲目地开发森林和草原是引起沙尘暴的主要原因</string>
 		</array>
 		<key>reply</key>
 		<string>A</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>DAB</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>C</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>A</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>B</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>B</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>A</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>A</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>C</string>
-	</dict>
-	<dict>
-		<key>explaination</key>
-		<array>
-			<string>错误</string>
-			<string>正确</string>
-			<string>错误</string>
-			<string>错误</string>
-		</array>
-		<key>reply</key>
-		<string>B</string>
 	</dict>
 </array>
 </plist>

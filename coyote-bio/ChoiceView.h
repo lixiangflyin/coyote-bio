@@ -24,6 +24,8 @@
 
 @property (nonatomic, retain) NSArray *btnPictureArray;
 
+@property (nonatomic, assign) int picValue;
+
 -(void)resetViewLocation:(int)buttonValue;
 
 - (id)initWithDelegate:(id)delegate;

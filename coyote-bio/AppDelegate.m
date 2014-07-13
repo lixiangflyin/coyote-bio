@@ -15,7 +15,18 @@
 {
     [application setStatusBarHidden:YES];
     
-    //[Toolkit saveTotalTime:@"3000"];
+    if ([Toolkit getTotalTime] == NULL ){
+        [Toolkit saveTotalTime:@"3000"];
+    }
+    if ([Toolkit getTestUrl] == NULL ){
+        [Toolkit saveTestUrl:@"127.0.0.1"];
+    }
+    
+    NSLog(@"access: %d",[Toolkit getLocalAccess]);
+    
+//    if (([Toolkit getLocalAccess] != YES) && ([Toolkit getLocalAccess] != NO)){
+//        [Toolkit saveLocalAccess:YES];
+//    }
     //[Toolkit saveRecordTime:@"2"];
     //[Toolkit saveNoticeTime:@"3"];
     //[Toolkit saveTestUrl:@"127.0.0.1"];

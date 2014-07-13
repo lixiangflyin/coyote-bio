@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SegueStatusListener.h"
+#import "ASIFormDataRequest.h"
 
 
 @interface UploadViewController : UIViewController<UITextViewDelegate,SegueStatusListener>
@@ -17,5 +18,7 @@
 @property (nonatomic, retain) NSMutableArray *replies;
 
 @property (nonatomic, retain) NSMutableArray *rightAnswers;
+
+@property (nonatomic, retain) ASIFormDataRequest *request;
 
 @end

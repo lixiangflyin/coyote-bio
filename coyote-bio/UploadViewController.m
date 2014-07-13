@@ -9,7 +9,7 @@
 #import "UploadViewController.h"
 #import "ProgressHUD.h"
 #import "JSONKit.h"
-#import "ASIFormDataRequest.h"
+
 
 #import "Toolkit.h"
 
@@ -27,6 +27,7 @@
     [_uploadParma release];  //其实不需要释放，因为未申请内存
     [_replies release];
     [_rightAnswers release];
+    _request = nil;
     [super dealloc];
 }
 
@@ -73,7 +74,7 @@
         [self simpleToServer];
     }
     
-    NSLog(@"reply: %@",_replies);
+    //NSLog(@"reply: %@",_replies);
 
     
     
@@ -126,7 +127,8 @@
         else
         {
             if (i == 4) {
-                str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,@"错误"];
+                NSString *str1 = [arr objectAtIndex:[self getReplyNumber:[_replies objectAtIndex:i]]];
+                str = [NSMutableString stringWithFormat:@"%@ 第%d题 %@ \n",str,i+1,str1];
             }
             else{
                 NSString *str1 = [arr objectAtIndex:[self getReplyNumber:[_replies objectAtIndex:i]]];
@@ -140,16 +142,18 @@
 
 -(int)getReplyNumber:(NSString *)reply
 {
-    if ([reply isEqualToString:@"A"])
+    if ([reply isEqualToString:@"A"] || [reply isEqualToString:@"BBB"])
         return 0;
-    else if ([reply isEqualToString:@"B"])
+    else if ([reply isEqualToString:@"B"] || [reply isEqualToString:@"ABB"])
         return 1;
-    else if ([reply isEqualToString:@"C"])
+    else if ([reply isEqualToString:@"C"] || [reply isEqualToString:@"AAB"])
         return 2;
-    else if ([reply isEqualToString:@"D"])
+    else if ([reply isEqualToString:@"D"] || [reply isEqualToString:@"ABA"])
         return 3;
+    else if ([reply isEqualToString:@"A"])
+        return 4;
     else
-        return 100;
+        return 1;
 }
 
 
@@ -204,19 +208,19 @@
     
     
     NSURL *myurl = [NSURL URLWithString:urlstr];
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:myurl];
+    _request = [ASIFormDataRequest requestWithURL:myurl];
     //设置表单提交项
-    [request setPostValue:@"1" forKey:@"uc"];
-    [request setPostValue:@"20140201" forKey:@"qgc"];
-    [request setPostValue:[self arrToString:_replies] forKey:@"ans"];
+    [_request setPostValue:@"1" forKey:@"uc"];
+    [_request setPostValue:@"20140201" forKey:@"qgc"];
+    [_request setPostValue:[self arrToString:_replies] forKey:@"ans"];
     
-    NSLog(@"request = %@",request);
+    NSLog(@"request = %@",_request);
     
-    [request setCompletionBlock:^{
+    [_request setCompletionBlock:^{
         
-        NSLog(@"responseString = %@",request.responseString);
+        NSLog(@"responseString = %@",_request.responseString);
         
-        NSDictionary *dic = [request.responseString objectFromJSONString];
+        NSDictionary *dic = [_request.responseString objectFromJSONString];
         NSLog(@"dic %@",dic);
         if ([[dic objectForKey:@"result"] isEqualToString:@"success"]) {
             
@@ -234,18 +238,18 @@
         }
         
     }];
-    [request setFailedBlock:^{
+    [_request setFailedBlock:^{
         
         [ProgressHUD showError:@"上传失败"];
         
-        NSLog(@"asi error: %@",request.error.debugDescription);
+        NSLog(@"asi error: %@",_request.error.debugDescription);
         
         //显示重传按钮
         [self addReuploadView];
         
     }];
     
-    [request startAsynchronous];
+    [_request startAsynchronous];
 }
 
 //数组转字符串
